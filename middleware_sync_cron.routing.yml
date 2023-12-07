@@ -1,0 +1,12 @@
+middleware_sync_cron.full_sync:
+  path: '/middleware_sync_cron/sync/{which}'
+  defaults:
+    _title: 'Middleware Sync'
+    _controller: '\Drupal\middleware_sync_cron\SyncController::cron'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: TRUE
+    parameters:
+      which:
+        type: string

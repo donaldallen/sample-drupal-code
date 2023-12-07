@@ -1,0 +1,5 @@
+name: Middleware Sync
+type: module
+description: Sync data from external provider through Middleware
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom

@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\middleware_sync_cron\SyncController;
+
+/**
+ * Member and local data sync
+ *
+ * @return void
+ */
+function middleware_sync_cron_cron(): void
+{
+    SyncController::cron();
+}
